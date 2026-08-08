@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Portfolio</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="{% url 'home' %}" class="logo">Port <span>Folio</span></a>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'skills' %}">Skills</a></li>
+            <li><a href="{% url 'projects' %}">Projects</a></li>
+            <li class="active"><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+    </header>
+    <section class="contact-section">
+        <div class="contact-heading">
+            <span>GET IN TOUCH</span>
+            <h1>Let's <strong>Connect</strong></h1>
+            <p>
+                Have a project, opportunity or simply want to say hello?
+                Feel free to get in touch with me.
+            </p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-heading">
+                    <h2>Contact Information</h2>
+                    <p>
+                        I'm always open to discussing new opportunities,
+                        interesting projects and ideas.
+                    </p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon"><i class='bx bx-phone'></i></div>
+                    <div>
+                        <span>PHONE</span>
+                        <h3>+91 7679020737</h3>
+                    </div>
+
+                </div>
+                <div class="info-card">
+                    <div class="info-icon"><i class='bx bx-envelope'></i></div>
+                    <div>
+                        <span>EMAIL</span>
+                        <h3>aec.it.soubhagya@gmail.com</h3>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon"><i class='bx bx-map'></i></div>
+                    <div>
+                        <span>LOCATION</span>
+                        <h3>Asansol, West Bengal, India</h3>
+                    </div>
+                </div>
+                <div class="social-section">
+                    <span>CONNECT WITH ME</span>
+                    <div class="social-links">
+                        <a href="https://github.com/Soubhagya-Kabiraj" title="GitHub" target="_blank"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.linkedin.com/in/soubhagya-kabiraj-a0069228b/" title="LinkedIn" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://www.facebook.com/soubhagya.kabiraj" title="Facebook" target="_blank"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://www.instagram.com/postobhaatey?igsh=MWRkOWw4emFtbXJnMQ==" title="Instagram" target="_blank"><i class='bx bxl-instagram'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-container">
+                <h2>Send Me a Message</h2>
+                <p>
+                    Fill out the form below and I'll get back to you
+                    as soon as possible.
+                </p>
+                <form method="POST">
+                    {% csrf_token %}
+                    <div class="form-row">
+                        <div class="input-box">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name"placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What is this about?" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="send-btn"> Send Message <i class='bx bx-send'></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <p>
+        © 2026 <span>Soubhagya Kabiraj</span> | All Rights Reserved.
+    </p>
+    </footer>
+
+</body>
+
+</html>

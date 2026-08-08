@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projects | Portfolio</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="{% url 'home' %}" class="logo">Port <span>Folio</span></a>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'skills' %}">Skills</a></li>
+            <li class="active"><a href="{% url 'projects' %}">Projects</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="projects-section">
+        <div class="projects-heading">
+            <h1>Featured <strong>Projects</strong></h1>
+            <p>
+                Real-world applications and projects built using
+                modern technologies and development practices.
+            </p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image" >
+                    <img src="{% static 'image/project_section/shop-ease.jpg' %}"alt="Shop Ease">
+                </div>
+                <div class="project-content">
+                    <span class="project-status"><i class='bx bx-check-circle'> COMPLETED</i></span>
+                    <h2 style="font-size: 22px;">Shop Ease</h2>
+                    <p>
+                        An E-commerce platform which manage 8+ module with authentication, product & order management, review & rating
+                        category-wise filtering, cart, Wishlist, and checkout system with Cash on Delivery integration. 
+                    </p>
+                    <div class="tech-stack">
+                        <span>Django</span>
+                        <span>Python</span>
+                        <span>SQLite</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Bootstrap</span>
+                    </div>
+                    <a href="https://github.com/Soubhagya-Kabiraj/ShopEase_Ecommerce_Website" class="code-btn" target="_blank">VIEW CODE<i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="{% static 'image/project_section/resumeiq.jpg' %}"
+                        alt="Resume IQ">
+                </div>
+                <div class="project-content">
+                    <span class="project-status"><i class='bx bx-check-circle'> COMPLETED</i></span>
+                    <h2 style="font-size: 22px;">Resume IQ</h2>
+                    <p>
+                        AI-powered resume analysis platform that extracts resume data, predicts suitable job roles, calculates resume scores, and 
+                        identifies skill gaps using NLP techniques.
+                    </p>
+                    <div class="tech-stack">
+                        <span>Django</span>
+                        <span>Python</span>
+                        <span>SQLite</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Bootstrap</span>
+                        <span>Scikit-learn | Joblib</span>
+                        <span>Pandas</span>
+                        <span>PDFPlumber</span>
+                        <span>TF-IDF</span>
+                    </div>
+                    <a href="https://github.com/Soubhagya-Kabiraj/Resume-IQ" class="code-btn" target="_blank">VIEW CODE<i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="{% static 'image/project_section/cravex.jpg' %}"alt="CraveX">
+                </div>
+                <div class="project-content">
+                    <span class="project-status"><i class='bx bx-check-circle'> COMPLETED</i></span>
+                    <h2 style="font-size: 22px;">CraveX</h2>
+                    <p>
+                        A food delivery application that allows users to explore food items, manage their cart, place orders
+                        and track the complete delivery process through cash on delivery by an intuitive interface. 
+                    </p>
+                    <div class="tech-stack">
+                        <span>Django</span>
+                        <span>Python</span>
+                        <span>SQLite</span>
+                        <span>HTML</span>
+                        <span>JavaScript</span>
+                        <span>Bootstrap</span>
+                        <span>Tailwind CSS</span>
+                    </div>
+                    <a href="https://github.com/Soubhagya-Kabiraj/Food_Delivery_App" class="code-btn" target="_blank">VIEW CODE<i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="{% static 'image/project_section/market-wave.jpg' %}" alt="Market Wave">
+                </div>
+                <div class="project-content">
+                    <span class="project-status"><i class='bx bx-check-circle'> COMPLETED</i></span>
+                    <h2 style="font-size: 22px;">Market Wave</h2>
+                    <p>
+                        A centralized CRM system to manage 4+ module products, customers, orders & tags for a shopping mall through a single admin.
+                        Built analytics module with 6 interactive visualizations & order status tracking.
+                    </p>
+                    <div class="tech-stack">
+                        <span>Django</span>
+                        <span>Python</span>
+                        <span>SQLite</span>
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
+                        <span>Bootstrap</span>
+                    </div>
+                    <a href="https://github.com/Soubhagya-Kabiraj/Market_Wave_Retail_CRM" class="code-btn" target="_blank">VIEW CODE<i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="{% static 'image/project_section/task-nova.jpg' %}"alt="Task Nova">
+                </div>
+                <div class="project-content">
+                    <span class="project-status"><i class='bx bx-check-circle'> COMPLETED</i></span>
+                    <h2>Task Nova</h2>
+                    <p>
+                        A smart task management application designed to help users organize tasks, manage schedules and improve
+                        productivity through a simple and intelligent workflow.
+                    </p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>REST API</span>
+                        <span>JavaScript</span>
+                        <span>HTML/CSS</span>
+                        <span>SQLite3</span>
+                        <span>Bootstrap</span>
+                        <span>AI Chat Bot</span>
+                    </div>
+                    <a href="https://github.com/Soubhagya-Kabiraj/Smart_Task_Manager" class="code-btn" target="_blank">VIEW CODE<i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="{% static 'image/project_section/train-ease.jpg' %}"alt="Train Ease">
+                </div>
+                <div class="project-content">
+                    <span class="project-status"><i class='bx bx-check-circle'> COMPLETED</i></span>
+                    <h2>Train Ease</h2>
+                    <p>
+                        A railway ticket booking application that provides users with a convenient way to search trains,
+                        book tickets, view booking details and maintain their complete ticket history.
+                    </p>
+                    <div class="tech-stack">
+                        <span>Java</span>
+                        <span>JSP</span>
+                        <span>Servlet</span>
+                        <span>JDBC</span>
+                        <span>MySQL</span>
+                        <span>Bootstrap</span>
+                        <span>HTML/CSS</span>
+                    </div>
+                    <a href="https://github.com/Soubhagya-Kabiraj/Train-Ease" class="code-btn" target="_blank">VIEW CODE<i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+            
+            <div class="project-card future-project">
+                <div class="project-image future-image">
+                    <i class='bx bx-plus'></i>
+                </div>
+                <div class="project-content">
+                    <span class="project-status">COMING SOON</span>
+                    <h2>New Project</h2>
+                    <p>
+                        A new project is currently in development. Details about the project, technologies and
+                        features will be added soon.
+                    </p>
+                    <div class="tech-stack"><span>Coming Soon</span></div>
+                    <a href="#" class="code-btn disabled">VIEW CODE<i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+       </div>
+    </section>
+    <footer class="footer">
+    <p>
+        © 2026 <span>Soubhagya Kabiraj</span> | All Rights Reserved.
+    </p>
+    </footer>
+
+</body>
+
+</html>

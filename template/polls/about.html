@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Soubhagya</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        #type {
+            background: linear-gradient(90deg, #00d9ff, #6c63ff, #b875ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+
+            border-right: 2px solid #00d9ff;
+            padding-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="{% url 'home' %}" class="logo">Port <span>Folio</span></a>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li class="active"><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'skills' %}">Skills</a></li>
+            <li><a href="{% url 'projects' %}">Projects</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+    </header>
+    <section class="about-section">
+        <div class="section-heading">
+            <h2 style="font-size: 40px;">
+                About <span style="font-size: 40px;">Me</span>
+            </h2>
+            <p style="font-size: 15px;">
+                A brief introduction about my journey, education and
+                passion for software development.
+            </p>
+        </div>
+        <div class="about-container">
+            <div class="about-content">
+
+                <p style="font-size: 27px; font-weight: bolder;"><i class='bx bx-code-alt'></i> I'm a <span
+                        id="type"></span></p>
+                <p>
+                    I'm a B.Tech Information Technology student with a strong interest in
+                    Full Stack Web Development and modern software engineering. I enjoy
+                    transforming ideas into practical, user-focused applications while
+                    continuously strengthening my programming and problem-solving abilities.
+                </p>
+                <p>
+                    My primary expertise lies in Python-based development, particularly
+                    Django and Flask, with hands-on experience in Java(Servlet, JSP), SQL, REST APIs,
+                    HTML, CSS, and JavaScript. I am passionate about developing scalable,
+                    efficient, and responsive web applications using modern development
+                    practices.
+                </p>
+                <p>
+                    Currently, I am focused on expanding my technical expertise on Machine Learning through
+                    real-world projects, internships, and continuous learning, with the
+                    goal of building a strong career as a Python Full Stack Developer
+                    and contributing to impactful software solutions.
+                </p>
+            </div>
+            <div class="developer-stats">
+
+                <div class="stats-header">
+                    <i class='bx bx-code-alt'></i>
+                    <div>
+                        <span>DEVELOPER PROFILE</span>
+                        <h3>Building With Purpose</h3>
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <i class='bx bx-layer'></i>
+                        <strong>6+</strong>
+                        <span>Projects</span>
+                    </div>
+                    <div class="stat-box">
+                        <i class='bx bx-book-open'></i>
+                        <strong>8.55</strong>
+                        <span>CGPA</span>
+                    </div>
+                    <div class="stat-box">
+                        <i class='bx bx-code-alt'></i>
+                        <strong>10+</strong>
+                        <span>Technologies</span>
+                    </div>
+                    <div class="stat-box">
+                        <i class='bx bx-brain'></i>
+                        <strong>DSA</strong>
+                        <span>Problem Solving</span>
+                    </div>
+                </div>
+
+                <div class="profile-focus">
+                    <span>FOCUS AREA</span>
+                    <p>Python Full Stack Development</p>
+                    <div class="focus-tags">
+                        <span>Django</span>
+                        <span>REST API</span>
+                        <span>SQL</span>
+                        <span>Machine Learning</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="education-section">
+            <div class="education-heading">
+                <span>
+                    <i class='bx bx-book-open'></i>
+                    MY ACADEMIC JOURNEY
+                </span>
+                <h2>Education</h2>
+                <p>
+                    My educational background and academic journey in
+                    Computer Science and Engineering.
+                </p>
+            </div>
+
+            <div class="education-timeline">
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class='bx bxs-graduation'></i>
+                    </div>
+                    <div class="education-card">
+                        <div class="education-year"> 2023 – 2027</div>
+                        <h3>Bachelor of Technology</h3>
+
+                        <h4> Information Technology </h4>
+
+                        <p class="institution">
+                            <i class='bx bx-building'></i>
+                            Asansol Engineering College
+                        </p>
+
+                        <p>
+                            Currently pursuing B.Tech Final Year in Information Technology
+                            with a focus on software development,
+                            programming, databases and web technologies.
+                        </p>
+
+                        <div class="education-result">
+                            <span>Current CGPA</span>
+                            <strong>8.55 / 10</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class='bx bx-book-open'></i>
+                    </div>
+                    <div class="education-card">
+                        <div class="education-year">2021 – 2023</div>
+                        <h3>Higher Secondary Education</h3>
+                        <h4>Class XII</h4>
+                        <p class="institution">
+                            <i class='bx bx-building'></i>
+                            Asansol Old Station High School.
+                        </p>
+                        <p>
+                            Completed Higher Secondary education with a strong
+                            foundation in science and computer-related
+                            subjects.
+                        </p>
+                        <div class="education-result">
+                            <span>Percentage</span>
+                            <strong>82%</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class='bx bxs-book'></i>
+                    </div>
+                    <div class="education-card">
+                        <div class="education-year">2011 – 2021</div>
+                        <h3>Secondary Education</h3>
+                        <h4>Class X</h4>
+                        <p class="institution">
+                            <i class='bx bx-building'></i>
+                            Asansol RamaKrishna Mission High School
+                        </p>
+                        <p>
+                            Completed secondary education and developed an
+                            early interest in computers and
+                            technology.
+                        </p>
+                        <div class="education-result">
+                            <span>Percentage</span>
+                            <strong>92%</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const texts = ["Full-Stack Developer", "REST API Architect", "Passionate Coder", "Problem Solver"];
+        const typing = document.getElementById("type");
+        let textIndex = 0;
+        let charIndex = 0;
+        let deleting = false;
+        function typeEffect() {
+            const currentText = texts[textIndex];
+            if (!deleting) {
+                typing.textContent = currentText.substring(0, charIndex + 1);
+                charIndex++;
+                if (charIndex === currentText.length) {
+                    deleting = true;
+                    setTimeout(typeEffect, 1500);
+                    return;
+                }
+            } else {
+                typing.textContent = currentText.substring(0, charIndex - 1);
+                charIndex--;
+                if (charIndex === 0) {
+                    deleting = false;
+                    textIndex = (textIndex + 1) % texts.length;
+                }
+            }
+            setTimeout(typeEffect, deleting ? 60 : 100);
+        }
+        typeEffect();
+    </script>
+
+    <footer class="footer">
+        <p>
+            © 2026 <span>Soubhagya Kabiraj</span> | All Rights Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>

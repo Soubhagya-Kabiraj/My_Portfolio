@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills | Soubhagya</title>
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <style>
+        .core-card:nth-child(1) i { color: #ff6b6b; }
+        .core-card:nth-child(2) i { color: #ffd166; }
+        .core-card:nth-child(3) i { color: #06d6a0; }
+        .core-card:nth-child(4) i { color: #4dabf7; }
+        .core-card:nth-child(5) i { color: #8a3f99; }
+    </style> 
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="{% url 'home' %}" class="logo">Port <span>Folio</span></a>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li class="active"><a href="{% url 'skills' %}">Skills</a></li>
+            <li><a href="{% url 'projects' %}">Projects</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="skills-section">
+      <div class="skills-heading" style="font-family: Arial, Helvetica, sans-serif;">
+            <span>MY TECHNICAL KNOWLEDGE</span>
+            <h1>My <strong>Tech Arsenal</strong></h1>
+            <p>
+                The technologies, tools and concepts I use to build
+                reliable and scalable software solutions.
+            </p>
+        </div>
+        <div class="skill-category">
+            <h2><i class='bx bx-code-alt'></i>Languages</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class='devicon-c-plain colored'></i><h3>C</h3>
+                </div>
+                <div class="skill-card">
+                    <i class='devicon-java-plain colored'></i><h3>Java</h3>
+                </div>
+                <div class="skill-card">
+                    <i class='devicon-html5-plain colored'></i><h3>HTML</h3>
+                </div>
+                <div class="skill-card">
+                    <i class='devicon-python-plain colored'></i><h3>Python</h3>
+                </div>
+                <div class="skill-card">
+                    <i class='devicon-mysql-plain colored'></i><h3>SQL</h3>
+                </div>
+            </div>
+        </div>
+        <div class="skill-category">
+            <h2><i class='bx bx-layer'></i>Frameworks & Web Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class='devicon-django-plain colored'></i><h3>Django</h3>
+                </div>
+                <div class="skill-card">
+                    <i class='devicon-flask-original colored'></i><h3>Flask</h3>
+                </div>
+                <div class="skill-card">
+                    <i class='devicon-fastapi-plain colored'></i><h3>REST APIs</h3>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bx-server'></i><h3>Servlet</h3>
+                </div>
+                <div class="skill-card">
+                    <i class='devicon-java-plain colored'></i><h3>JSP</h3>
+                </div>
+            </div>
+        </div>
+        <div class="skill-category">
+            <h2><i class='bx bx-wrench'></i>Tools & Development Environment</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class='devicon-git-plain colored'></i><h3>Git & GitHub</h3>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bx-brain'></i></i><h3>Machine Learning</h3>
+                </div>
+                <div class="skill-card">
+                    <i class='devicon-vscode-plain colored'></i><h3>VS Code</h3>
+                </div>
+                <div class="skill-card">
+                    <i class='devicon-linux-plain colored'></i><h3>Linux</h3>
+                </div>
+                <div class="skill-card">
+                    <i class='devicon-postman-plain colored'></i><h3>Postman</h3>
+                </div>
+            </div>
+        </div>
+        <div class="skill-category">
+            <h2><i class='bx bx-brain'></i>Core Concepts</h2>
+            <div class="skills-grid">
+                <div class="skill-card core-card">
+                    <i class='bx bx-git-branch'></i><h3>DSA</h3>
+                </div>
+                <div class="skill-card core-card">
+                    <i class='bx bx-cube'></i><h3>OOPS</h3>
+                </div>
+                <div class="skill-card core-card">
+                    <i class='bx bx-network-chart'></i><h3>Computer Networks</h3>
+                </div>
+                <div class="skill-card core-card">
+                    <i class='bx bx-data'></i><h3>DBMS</h3>
+                </div>
+                <div class="skill-card core-card">
+                    <i class='bx bx-desktop'></i><h3>Operating Systems</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <p>
+        © 2026 <span>Soubhagya Kabiraj</span> | All Rights Reserved.
+    </p>
+    </footer>
+</body>
+
+</html>

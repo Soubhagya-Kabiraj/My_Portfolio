@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soubhagya | Personal Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="{% url 'home' %}" class="logo">Port <span>Folio</span></a>
+        <ul>
+            <li class="active"><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'skills' %}">Skills</a></li>
+            <li><a href="{% url 'projects' %}">Projects</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+    </header>
+    <div class="typing-welcome">
+        
+        <span id="typing"></span>
+        
+    </div>
+    <section class="home">
+        <div class="home-info">          
+            <h2>
+                Hello Connections, I'm </h2>
+            <h1>Soubhagya <span>Kabiraj</span></h1>
+            <br>
+            <p>Python Django Developer and REST API Architect. Passionate about building responsive, scalable, and
+                user-friendly web applications. I enjoy solving real-world problems through clean,
+                efficient code and continuously expanding my skills. Let's Connect.</p>
+            <div class="btn-sci">
+                <div class="sci">
+                    <a href="https://github.com/Soubhagya-Kabiraj" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/soubhagya-kabiraj-a0069228b/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.facebook.com/soubhagya.kabiraj" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/postobhaatey?igsh=MWRkOWw4emFtbXJnMQ==" target="_blank"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+            <a href="{% static 'resume/Soubhagya_Resume.pdf' %}" download="Soubhagya_Resume.pdf" class="resume-btn">
+                <i class='bx bx-download'></i>Download Resume
+            </a>
+        </div>
+
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="{% static 'image/Soubhagya.jpg' %}" alt="Profile">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="services-section">
+        <div class="services-heading">
+            <span style="font-size: 20px;">WHAT I DO</span>
+            <h2>Turning Ideas Into <strong>Solutions.</strong></h2>
+            <p>
+                I build practical, scalable and user-focused applications
+                using modern development technologies.
+            </p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon"><i class='bx bx-code-alt'></i></div>
+                <div class="service-content">
+                    <h3>Full Stack Development</h3>
+                    <p>
+                        Building responsive and functional web applications
+                        using Python, Django, Flask, HTML, CSS and JavaScript.
+                    </p>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class='bx bx-data'></i></div>
+                <div class="service-content">
+                    <h3>Database Management</h3>
+                    <p>
+                        Designing and managing relational databases using
+                        MySQL and PostgreSQL with efficient data handling.
+                    </p>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class='bx bx-bulb'></i></div>
+                <div class="service-content">
+                    <h3>Problem Solving</h3>
+                    <p>
+                        Applying DSA, OOP and logical thinking to solve
+                        programming problems and build efficient solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>
+            © 2026 <span>Soubhagya Kabiraj</span> | All Rights Reserved.
+        </p>
+    </footer>
+    <script>
+        const text1 = "Welcome to ";
+        const text2 = "My Portfolio";
+        let i = 0;
+        let j = 0;
+        function typeEffect() {
+            const typing = document.getElementById("typing");
+            if (i < text1.length) {
+                typing.innerHTML += text1.charAt(i);
+                i++;
+                setTimeout(typeEffect, 100);
+            } 
+            else if (j < text2.length) {
+                typing.innerHTML += `<span class="portfolio-text">${text2.charAt(j)}</span>`;
+                j++;
+                setTimeout(typeEffect, 100);
+            }
+        }
+        typeEffect();
+    </script>
+</body>
+
+</html>
