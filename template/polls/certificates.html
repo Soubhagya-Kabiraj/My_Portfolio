@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Certificates & Achievements | Soubhagya</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+</head>
+
+<body>
+    <!-- ==========================================
+         UPDATED: Space Theme / Mobile Three-Dot Navbar
+         ========================================== -->
+    <canvas id="space-canvas"></canvas>
+    <header class="navbar">
+        <a href="{% url 'home' %}" class="logo">Port <span>Folio</span></a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation">
+            <i class='bx bx-dots-vertical-rounded'></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'skills' %}">Skills</a></li>
+            <li><a href="{% url 'projects' %}">Projects</a></li>
+            <li><a href="{% url 'experience' %}">Experience</a></li>
+            <li class="active"><a href="{% url 'certificates' %}">Certificates</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="certificates-section">
+        <div class="certificates-heading">
+            <span>MY CREDENTIALS & ACHIEVEMENTS</span>
+            <h1>Certificates & <strong>Milestones</strong></h1>
+            <p>
+                Verified certifications, online courses, and technical
+                achievements that validate my skills.
+            </p>
+        </div>
+
+        <div class="certificates-grid">
+            <!-- Card 1: NASSCOM - Gen AI Tools -->
+            <div class="cert-card">
+                <div class="cert-header">
+                    <div class="cert-icon-badge">
+                        <i class='bx bx-brain'></i>
+                    </div>
+                </div>
+                <div class="cert-content">
+                    <div class="cert-card-top">
+                        <span class="cert-issuer-badge"><i class='bx bx-award'></i> NASSCOM</span>
+                        <span class="cert-status-tag verified"><i class='bx bx-check-circle'></i> VERIFIED</span>
+                    </div>
+                    <h2>NASSCOM – Gen AI Tools</h2>
+                    <p>
+                        Specialized certification in Generative AI tools, prompt engineering techniques, and AI-driven
+                        development workflows.
+                    </p>
+                    <div class="cert-tags">
+                        <span>NASSCOM</span>
+                        <span>Gen AI</span>
+                        <span>Prompt Eng</span>
+                        <span>AI Tools</span>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1sUu-vWV7O3A_uR-rcTg5-fs3ekghnx-m/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="cert-btn">
+                        VIEW CERTIFICATE <i class='bx bx-link-external'></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 2: Complete Flask Framework -->
+            <div class="cert-card">
+                <div class="cert-header">
+                    <div class="cert-icon-badge">
+                        <i class='devicon-flask-original'></i>
+                    </div>
+                </div>
+                <div class="cert-content">
+                    <div class="cert-card-top">
+                        <span class="cert-issuer-badge"><i class='bx bx-award'></i> Udemy</span>
+                        <span class="cert-status-tag verified"><i class='bx bx-check-circle'></i> VERIFIED</span>
+                    </div>
+                    <h2>Complete Flask Framework</h2>
+                    <p>
+                        Mastered building lightweight Python web applications, RESTful APIs, routing, Jinja2 templates,
+                        and database ORM integration.
+                    </p>
+                    <div class="cert-tags">
+                        <span>Udemy</span>
+                        <span>Flask</span>
+                        <span>Python</span>
+                        <span>REST API</span>
+                    </div>
+                    <a href="https://www.udemy.com/certificate/UC-55c81282-72d2-4441-b89c-c15df8eb99e3/" target="_blank" rel="noopener noreferrer" class="cert-btn">
+                        VIEW CERTIFICATE <i class='bx bx-link-external'></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 3: Complete OOPS -->
+            <div class="cert-card">
+                <div class="cert-header">
+                    <div class="cert-icon-badge">
+                        <i class='bx bx-cube'></i>
+                    </div>
+                </div>
+                <div class="cert-content">
+                    <div class="cert-card-top">
+                        <span class="cert-issuer-badge"><i class='bx bx-award'></i> Udemy</span>
+                        <span class="cert-status-tag verified"><i class='bx bx-check-circle'></i> VERIFIED</span>
+                    </div>
+                    <h2>Complete OOPS</h2>
+                    <p>
+                        In-depth mastery of Object-Oriented Programming principles: Encapsulation, Abstraction,
+                        Inheritance, Polymorphism, and Design Patterns.
+                    </p>
+                    <div class="cert-tags">
+                        <span>Udemy</span>
+                        <span>OOPS</span>
+                        <span>Design Patterns</span>
+                        <span>OOP Concept</span>
+                    </div>
+                    <a href="https://www.udemy.com/certificate/UC-64d324e9-5cb4-4e1e-b59e-c488958ac0f1/" target="_blank" rel="noopener noreferrer" class="cert-btn">
+                        VIEW CERTIFICATE <i class='bx bx-link-external'></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 4: Complete DBMS -->
+            <div class="cert-card">
+                <div class="cert-header">
+                    <div class="cert-icon-badge">
+                        <i class='bx bx-data'></i>
+                    </div>
+                </div>
+                <div class="cert-content">
+                    <div class="cert-card-top">
+                        <span class="cert-issuer-badge"><i class='bx bx-award'></i> Udemy</span>
+                        <span class="cert-status-tag verified"><i class='bx bx-check-circle'></i> VERIFIED</span>
+                    </div>
+                    <h2>Complete DBMS</h2>
+                    <p>
+                        Comprehensive study of Relational Database Management Systems, SQL Queries, Schema Design,
+                        Normalization, and ACID transactions.
+                    </p>
+                    <div class="cert-tags">
+                        <span>Udemy</span>
+                        <span>DBMS</span>
+                        <span>SQL</span>
+                        <span>Relational DB</span>
+                    </div>
+                    <a href="https://www.udemy.com/certificate/UC-11e363b1-ce90-4513-9a33-e643e63ff13c/" target="_blank" rel="noopener noreferrer" class="cert-btn">
+                        VIEW CERTIFICATE <i class='bx bx-link-external'></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 5: PHP for Beginners -->
+            <div class="cert-card">
+                <div class="cert-header">
+                    <div class="cert-icon-badge">
+                        <i class='devicon-php-plain'></i>
+                    </div>
+                </div>
+                <div class="cert-content">
+                    <div class="cert-card-top">
+                        <span class="cert-issuer-badge"><i class='bx bx-award'></i> Udemy</span>
+                        <span class="cert-status-tag verified"><i class='bx bx-check-circle'></i> VERIFIED</span>
+                    </div>
+                    <h2>PHP for Beginners</h2>
+                    <p>
+                        Practical training in PHP, MySQL, custom MVC architectural patterns, URL routing, user
+                        authentication, and testing.
+                    </p>
+                    <div class="cert-tags">
+                        <span>Cursa</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>MVC</span>
+                        <span>Auth</span>
+                    </div>
+                    <a href="https://www.udemy.com/course/build-modern-php-api/learn/lecture/38719400?start=0#overview" target="_blank" rel="noopener noreferrer" class="cert-btn">
+                        VIEW CERTIFICATE <i class='bx bx-link-external'></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 6: LeetCode - 100+ Problems Solved -->
+            <div class="cert-card">
+                <div class="cert-header">
+                    <div class="cert-icon-badge">
+                        <i class='bx bx-code-alt'></i>
+                    </div>
+                </div>
+                <div class="cert-content">
+                    <div class="cert-card-top">
+                        <span class="cert-issuer-badge"><i class='bx bx-terminal'></i> LeetCode</span>
+                        <span class="cert-status-tag achievement"><i class='bx bx-trending-up'></i> RATING: 1421</span>
+                    </div>
+                    <h2>LeetCode – 100+ Problems Solved</h2>
+                    <p>
+                        Solved 100+ Data Structures & Algorithms problems across diverse topics with a Contest Rating of
+                        <strong>1421</strong>.
+                    </p>
+                    <div class="cert-tags">
+                        <span>LeetCode</span>
+                        <span>100+ Solved</span>
+                        <span>Rating: 1421</span>
+                        <span>DSA</span>
+                    </div>
+                    <a href="https://leetcode.com/u/rJ2AcTE5sQ/" target="_blank" rel="noopener noreferrer" class="cert-btn">
+                        VIEW LEETCODE PROFILE <i class='bx bx-code-alt'></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>
+            © 2026 <span>Soubhagya Kabiraj</span> | All Rights Reserved.
+        </p>
+    </footer>
+
+    <!-- ==========================================
+         UPDATED: Mobile Navigation & Space Canvas Script
+         ========================================== -->
+    <script src="{% static 'JS/script.js' %}"></script>
+</body>
+
+</html>

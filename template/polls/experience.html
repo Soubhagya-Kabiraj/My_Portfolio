@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Experience | Soubhagya</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+</head>
+
+<body>
+    <!-- ==========================================
+         UPDATED: Space Theme / Mobile Three-Dot Navbar
+         ========================================== -->
+    <canvas id="space-canvas"></canvas>
+    <header class="navbar">
+        <a href="{% url 'home' %}" class="logo">Port <span>Folio</span></a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation">
+            <i class='bx bx-dots-vertical-rounded'></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'skills' %}">Skills</a></li>
+            <li><a href="{% url 'projects' %}">Projects</a></li>
+            <li class="active"><a href="{% url 'experience' %}">Experience</a></li>
+            <li><a href="{% url 'certificates' %}">Certificates</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="experience-section">
+        <div class="experience-heading">
+            <span>MY PROFESSIONAL JOURNEY</span>
+            <h1>Experience & <strong>Activities</strong></h1>
+            <p>
+                Hackathons, technical roles, research contributions, and
+                professional memberships that shaped my career.
+            </p>
+        </div>
+
+        <div class="exp-timeline">
+
+            <!-- Experience 1: Guidewire DevTrails Hackathon -->
+            <div class="exp-timeline-item">
+                <div class="exp-timeline-marker">
+                    <div class="exp-marker-dot">
+                        <i class='bx bx-trophy'></i>
+                    </div>
+                </div>
+                <div class="exp-card">
+                    <div class="exp-card-header">
+                        <div class="exp-org-info">
+                            <div class="exp-org-icon">
+                                <i class='bx bx-buildings'></i>
+                            </div>
+                            <div>
+                                <h3>Guidewire</h3>
+                                <span class="exp-role">DevTrails Hackathon 2026</span>
+                            </div>
+                        </div>
+                        <div class="exp-meta">
+                            <span class="exp-year-badge"><i class='bx bx-calendar'></i> 2026</span>
+                            <span class="exp-type-badge hackathon"><i class='bx bx-trophy'></i> Hackathon</span>
+                        </div>
+                    </div>
+                    <div class="exp-card-body">
+                        <p>
+                            Participated in the DevTrails Hackathon 2026 organized by Guidewire, demonstrating
+                            rapid prototyping, innovative problem-solving, and full-stack software engineering
+                            skills. Collaborated with a team to design and build a functional application
+                            within a competitive time-constrained environment.
+                        </p>
+                        <div class="exp-skills">
+                            <span>Full-Stack Development</span>
+                            <span>Rapid Prototyping</span>
+                            <span>Team Collaboration</span>
+                            <span>Problem Solving</span>
+                            <span>Software Design</span>
+                        </div>
+                    </div>
+                    <div class="exp-card-footer">
+                        <a href="https://drive.google.com/file/d/1tCBbWBrLy4xUfbZj2eSiZsZJwM5zLoax/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="exp-link-btn">
+                            VIEW DETAILS <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience 2: IEEE Webmaster -->
+            <div class="exp-timeline-item">
+                <div class="exp-timeline-marker">
+                    <div class="exp-marker-dot">
+                        <i class='bx bx-globe'></i>
+                    </div>
+                </div>
+                <div class="exp-card">
+                    <div class="exp-card-header">
+                        <div class="exp-org-info">
+                            <div class="exp-org-icon">
+                                <i class='bx bx-id-card'></i>
+                            </div>
+                            <div>
+                                <h3>IEEE</h3>
+                                <span class="exp-role">Webmaster & Member</span>
+                            </div>
+                        </div>
+                        <div class="exp-meta">
+                            <span class="exp-year-badge"><i class='bx bx-calendar'></i> 2026 – Present</span>
+                            <span class="exp-type-badge position"><i class='bx bx-briefcase'></i> Position</span>
+                        </div>
+                    </div>
+                    <div class="exp-card-body">
+                        <p>
+                            Serving as Webmaster at the IEEE Student Branch, responsible for managing the
+                            digital presence, maintaining the official website, and coordinating technical
+                            operations. Actively contributing to IEEE events, workshops, and knowledge-sharing
+                            initiatives within the student community.
+                        </p>
+
+                        <!-- Research Paper Highlight -->
+                        <div class="exp-research-block">
+                            <div class="exp-research-header">
+                                <i class='bx bx-file'></i>
+                                <span>RESEARCH PAPER</span>
+                            </div>
+                            <h4>"5G Unlicensed Spread Spectrum"</h4>
+                            <p>
+                                Authoring a research paper exploring unlicensed spectrum utilization in 5G
+                                networks, focusing on spread spectrum techniques and their implications for
+                                next-generation wireless communication.
+                            </p>
+                            <span class="exp-research-status">
+                                <i class='bx bx-loader-circle bx-spin'></i> Ongoing
+                            </span>
+                        </div>
+
+                        <div class="exp-skills">
+                            <span>Web Management</span>
+                            <span>IEEE Membership</span>
+                            <span>5G Research</span>
+                            <span>Spread Spectrum</span>
+                            <span>Technical Writing</span>
+                        </div>
+                    </div>
+                    <div class="exp-card-footer">
+                        <a href="https://drive.google.com/file/d/1kVG8jRdkdXX-qbRvaW0jmPJlKu-DOHAh/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="exp-link-btn">
+                            VIEW MEMBERSHIP / LINK <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>
+            © 2026 <span>Soubhagya Kabiraj</span> | All Rights Reserved.
+        </p>
+    </footer>
+
+    <!-- ==========================================
+         UPDATED: Mobile Navigation & Space Canvas Script
+         ========================================== -->
+    <script src="{% static 'JS/script.js' %}"></script>
+</body>
+
+</html>

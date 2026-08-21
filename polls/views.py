@@ -1,24 +1,25 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 
 def home(request):
-    return render(request,'polls/home.html')
+    return render(request, 'polls/home.html')
 
 def about(request):
-    return render(request,'polls/about.html')
-
-def contact(request):
-    return render(request,'polls/contact.html')
+    return render(request, 'polls/about.html')
 
 def skills(request):
-    return render(request,'polls/skills.html')
+    return render(request, 'polls/skills.html')
 
 def projects(request):
-    return render(request,'polls/projects.html')
+    return render(request, 'polls/projects.html')
 
-from django.shortcuts import render, redirect
+def experience(request):
+    return render(request, 'polls/experience.html')
+
+def certificates(request):
+    return render(request, 'polls/certificates.html')
+
 from .models import ContactMessage
-
 
 def contact(request):
     if request.method == "POST":
@@ -30,3 +31,4 @@ def contact(request):
         )
         return redirect("contact")
     return render(request, "polls/contact.html")
+

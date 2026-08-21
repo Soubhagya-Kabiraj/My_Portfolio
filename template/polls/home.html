@@ -11,13 +11,22 @@
 </head>
 
 <body>
+    <!-- ==========================================
+         UPDATED: Space Theme / Mobile Three-Dot Navbar
+         ========================================== -->
+    <canvas id="space-canvas"></canvas>
     <header class="navbar">
         <a href="{% url 'home' %}" class="logo">Port <span>Folio</span></a>
-        <ul>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation">
+            <i class='bx bx-dots-vertical-rounded'></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
             <li class="active"><a href="{% url 'home' %}">Home</a></li>
             <li><a href="{% url 'about' %}">About</a></li>
             <li><a href="{% url 'skills' %}">Skills</a></li>
             <li><a href="{% url 'projects' %}">Projects</a></li>
+            <li><a href="{% url 'experience' %}">Experience</a></li>
+            <li><a href="{% url 'certificates' %}">Certificates</a></li>
             <li><a href="{% url 'contact' %}">Contact</a></li>
         </ul>
     </header>
@@ -105,6 +114,11 @@
             © 2026 <span>Soubhagya Kabiraj</span> | All Rights Reserved.
         </p>
     </footer>
+    
+    <!-- ==========================================
+         UPDATED: Mobile Navigation & Space Canvas Script
+         ========================================== -->
+    <script src="{% static 'JS/script.js' %}"></script>
     <script>
         const text1 = "Welcome to ";
         const text2 = "My Portfolio";
